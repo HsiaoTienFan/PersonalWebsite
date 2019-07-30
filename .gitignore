@@ -202,5 +202,6 @@ output.csv
 #Visual Studio
 
 /.vs
+.vs/
 
 # End of https://www.gitignore.io/api/linux,macos,python,windows
