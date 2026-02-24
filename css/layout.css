@@ -1456,3 +1456,26 @@ fieldset[disabled] .btn-theme {
     text-align: right;
   }
 }
+
+/*------------------------------------------------------------------
+    [Intro List]
+------------------------------------------------------------------*/
+.intro-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.intro-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+
+.intro-list li:before {
+  font-family: "simple-line-icons";
+  content: "\e080";
+  position: absolute;
+  left: 0;
+  color: #17bed2;
+}
