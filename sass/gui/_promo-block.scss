@@ -9,10 +9,6 @@
 		@include font($size: 70px);
 		color: $color-white;
 		line-height: 1;
-
-		@media (max-width: $screen-xs-min) {
-			@include font($size: 50px);
-		}
 	}
 
 	.promo-block-text {
@@ -21,8 +17,88 @@
 	}
 
 	.promo-block-divider {
-		border-bottom: 1px solid rgba(255,255,255,.4);
-		padding-bottom: 20px;
-		margin-bottom: 35px;
+		width: 60px;
+		height: 3px;
+		background: $color-base;
+		border: none;
+		margin: 25px 0;
+		padding: 0;
+	}
+}
+
+/* Hero Two-Column Layout */
+.promo-block-row {
+	display: flex;
+	align-items: center;
+}
+
+.promo-block-text-col {
+	padding-right: 30px;
+}
+
+.promo-block-social {
+	margin-bottom: 25px;
+}
+
+.promo-block-img-wrap {
+	overflow: hidden;
+	border-radius: 12px;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.promo-block-img {
+	width: 100%;
+	height: 380px;
+	object-fit: cover;
+	object-position: center 20%;
+	display: block;
+}
+
+.btn-resume {
+	display: inline-block;
+	padding: 12px 30px;
+	color: $color-white;
+	border: 2px solid $color-base;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	@include transition;
+
+	&:hover,
+	&:focus {
+		color: #1a1a2e;
+		background: $color-base;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: $screen-sm-min) {
+	.promo-block-row {
+		display: block;
+	}
+
+	.promo-block-text-col {
+		padding-right: 15px;
+		text-align: center;
+	}
+
+	.promo-block .promo-block-title {
+		@include font($size: 50px);
+	}
+
+	.promo-block .promo-block-divider {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.promo-block-img-wrap {
+		margin-top: 40px;
+	}
+
+	.promo-block-img {
+		height: 300px;
 	}
 }

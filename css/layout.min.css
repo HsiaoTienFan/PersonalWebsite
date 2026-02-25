@@ -1315,3 +1315,91 @@ h3, h4 {
 }
 
 .intro-list{list-style:none;padding-left:0;margin-bottom:20px}.intro-list li{position:relative;padding-left:30px;margin-bottom:8px}.intro-list li:before{font-family:"simple-line-icons";content:"\e080";position:absolute;left:0;color:#17bed2}
+
+/* Hero Section Redesign */
+.promo-block-row {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.promo-block-text-col {
+    padding-right: 30px;
+}
+
+.promo-block .promo-block-divider {
+    width: 60px;
+    height: 3px;
+    background: #17bed2;
+    border: none;
+    margin: 25px 0;
+    padding: 0;
+}
+
+.promo-block-social {
+    margin-bottom: 25px;
+}
+
+.promo-block-img-wrap {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.promo-block-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.btn-resume {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    border: 2px solid #17bed2;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.btn-resume:hover,
+.btn-resume:focus {
+    color: #1a1a2e;
+    background: #17bed2;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .promo-block-row {
+        display: block;
+    }
+
+    .promo-block-text-col {
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .promo-block .promo-block-title {
+        font-size: 50px;
+    }
+
+    .promo-block .promo-block-divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .promo-block-img-wrap {
+        margin-top: 40px;
+    }
+
+    .promo-block-img {
+        height: 300px;
+    }
+}
